@@ -8,7 +8,7 @@
 </head>
 <body>
  <center>
-  <h1>User profile Page</h1>
+  <h1>User profile Page</h1> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a  href="./logout">Logout</a>
   <table>
     <tr>
       <td>First Name</td>

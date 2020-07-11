@@ -11,7 +11,7 @@ public class ForwardController {
 
 	@GetMapping(value = "/test")
     public String handleTestRequest2 (){
-         return "forward:/user/login";
+         return "forward:/spring/user/login";
     }
 	
 }

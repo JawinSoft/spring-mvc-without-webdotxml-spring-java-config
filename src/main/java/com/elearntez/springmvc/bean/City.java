@@ -1,15 +1,24 @@
 package com.elearntez.springmvc.bean;
 
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement(name="City")
 public class City {
 
+	@XmlElement(name="id")
 	private int id;
 	
+	@XmlElement(name="name")
 	private String name;
 	
+	@XmlElement(name="countryCode")
 	private String countryCode;
 	
+	@XmlElement(name="district")
 	private String district;
 	
+	@XmlElement(name="population")
 	private Long population;
 
 	public int getId() {

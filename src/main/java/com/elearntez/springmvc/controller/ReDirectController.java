@@ -7,10 +7,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/redirect")
 public class ReDirectController {
-
+	
+	
 	@GetMapping("/home")
 	   public String redirect() {
-	      return "redirect:http://www.elearntez.com";
+		
+		 //response.sendRedirect(arg0);
+		
+	      return "redirect:https://www.google.com/search?q=covid+19";
 	   }
 	
 }

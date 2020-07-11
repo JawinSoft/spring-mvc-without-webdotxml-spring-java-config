@@ -1,5 +1,7 @@
 package com.elearntez.springmvc.controller;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,14 +26,17 @@ public class LoginController {
       return new User();
    }
 
+   
+   //http://localhost:8080/spring-mvc-without-webdotxml-spring-java-config/spring/user/login
    @GetMapping("/login")
    public String index() {
+	   System.out.println("This Statement from Controller....");
       return "index";
    }
 
    @PostMapping("/dologin")
    public String doLogin(@ModelAttribute("user") User user, Model model) {
-
+   
       // Implement your business logic
       if (user.getEmail().equals("manakasunil@gmail.com") && 
     		   user.getPassword().equals("abc@123")) {
@@ -40,7 +45,7 @@ public class LoginController {
     	  user.setMname("Kumar");
     	  return "success";
       } else {
-         model.addAttribute("message", "Login failed. Try again.");
+         model.addAttribute("errorMessage", "Login failed. Try again.");
          return "index";
       }
       
@@ -56,5 +61,13 @@ public class LoginController {
       System.out.println("First Name: " + user.getFname());
 
       return "user";
+   }
+   
+   
+   @GetMapping("/logout")
+   public String logout(HttpSession session) {
+	   session.removeAttribute("user");
+	   session.invalidate();
+	   return "index";
    }
 }

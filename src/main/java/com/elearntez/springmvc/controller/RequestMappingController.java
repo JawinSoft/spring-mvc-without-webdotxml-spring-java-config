@@ -10,17 +10,17 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController("/rest")
 public class RequestMappingController {
 
-	@GetMapping
+	/*@GetMapping
 	public String getMapping(){
 		System.out.println("Http Get Request");
 	  return "You Sent Http Get Request";
-	}
+	}*/
 	
-	@PostMapping
+	/*@PostMapping
    public String postMapping(){
 	   System.out.println("Http Post Request");
 		  return "You Sent Http Post Request";
-    }
+    }*/
    
 	@PutMapping
    public String putMapping(){

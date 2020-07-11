@@ -10,7 +10,6 @@
 <body>
 <center>
   <h1>User Login</h1>
-   
     
   <form:form action="dologin" method="post" modelAttribute="user">
     <table>
@@ -28,7 +27,7 @@
     </table>
   </form:form>
 
-  <span style="color: red;">${message}</span>
+  <span style="color: red;">${errorMessage}</span>
   </center> 
 </body>
 </html>

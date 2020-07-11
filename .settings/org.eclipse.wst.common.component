@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="SpringMvcDemo2">
+    <wb-module deploy-name="spring-mvc-without-webdotxml-spring-java-config">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
-        <property name="context-root" value="SpringMvcDemo2"/>
-        <property name="java-output-path" value="/SpringMvcDemo2/target/classes"/>
+        <property name="java-output-path" value="/spring-mvc-without-webdotxml-spring-java-config/target/classes"/>
+        <property name="context-root" value="spring-mvc-without-webdotxml-spring-java-config"/>
     </wb-module>
 </project-modules>
